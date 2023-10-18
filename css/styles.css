@@ -36,7 +36,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('/images/machu-picchu.jpg');
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/machu-picchu.jpg');
     background-size: cover;
     z-index: -1;
 
@@ -75,6 +75,7 @@ body{
     grid-auto-flow: column;
     grid-auto-columns: max-content;
     gap: 1em;
+    align-items: center;
 }
 
 .nav__items{
@@ -100,6 +101,19 @@ body{
 
 .nav__close{
     display: var(--show, none);
+}
+
+#contact__button{
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#contact{
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 400;
 }
 
 /* Hero Container */
@@ -177,6 +191,11 @@ body{
     align-items: center;
 }
 
+#input__text{
+    width: 100%;
+    max-width: 300;    
+}
+
 /* About */
 
 .about{
@@ -223,6 +242,7 @@ body{
     width: 160px;
     border-radius: 10px;
 }
+
 
 /* Nuestras herramientas */
 .tools{
