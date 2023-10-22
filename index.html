@@ -58,44 +58,42 @@
     </header>
 
     <main>
-        <section class="container about">
+        <section class="container benefits">
             <h2 class="subtitle">Beneficios de ViajandoJuntos</h2>
-            <div class="about__main">
-                <article class="about__icons">
-                    <img src="./images/icons/lock.svg" alt="" class="about__icon">
-                    <button class="about__title">
+            <div class="benefits__main">
+                <article class="benefits__icons">
+                    <img src="./images/icons/lock.svg" alt="" class="benefits__icon">
+                    <button class="benefits__title">
                         <h4>Seguridad</h4>
                 </button>
                 </article>
 
-                <article class="about__icons">
-                    <img src="./images/icons/personalization.svg" alt="" class="about__icon">
-                    <button class="about__title">
+                <article class="benefits__icons">
+                    <img src="./images/icons/personalization.svg" alt="" class="benefits__icon">
+                    <button class="benefits__title">
                         <h4>Personalización</h4>
                 </button>
                 </article>
 
-                <article class="about__icons">
-                    <img src="./images/icons/community.svg" alt="" class="about__icon">
-                    <button class="about__title">
+                <article class="benefits__icons">
+                    <img src="./images/icons/community.svg" alt="" class="benefits__icon">
+                    <button class="benefits__title">
                         <h4>Comunidad</h4>
                     </button>
                 </article>
-            </div>
-            <div class="about__main">
-                <article class="about__icons">
-                    <img src="./images/icons/offer.svg" alt="" class="about__icon">
-                    <button class="about__title">
+                <article class="benefits__icons">
+                    <img src="./images/icons/offer.svg" alt="" class="benefits__icon">
+                    <button class="benefits__title">
                         <h4>Descuentos</h4>
                 </button>
                 </article>
 
-                <article class="about__icons">
-                    <img src="./images/icons/planning.svg" alt="" class="about__icon">
-                    <button class="about__title">
+                <article class="benefits__icons">
+                    <img src="./images/icons/planning.svg" alt="" class="benefits__icon">
+                    <button class="benefits__title">
                             <h4>Planificación</h4>
                     </button>
-                </article>
+                </article>                
             </div>
         </section>
 
@@ -119,11 +117,112 @@
                 <article class="tools__icons">
                     <img src="./images/icons/community.svg" alt="" class="tools__icon">
                     <button class="tools__title">
-                        <h3 >Convenios</h3>
+                       <h3 >Convenios</h3>
                     </button>
                 </article>
         </section>
+        <section class="testimony">
+            <h2 class="testimony__subtitle subtitle">Opiniones de nuestros usuarios</h2>
+            <div class="testimony__container container">
+                <img src="./images/icons/leftarrow.svg" class="testimony__arrow" id="before">
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Michael Duffó,
+                            <span class="testimony__info">Viajero Frecuente.</span>
+                        </h2>
+                        <p class="testimony__review">
+                            Empeze a usar ViajandoJuntos al inicio del año para 
+                            planear mi viaje a Europa. Me ayuda mucho a tener toda 
+                            mi información en un lugar ordenado y facil de usar. La 
+                            comunidad es muy placentera y me ayudo mucha para encontrar
+                            lugares turisticos. Lo recomiendo para todos los viajeros!
+                        </p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/person1.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Diana López,
+                            <span class="testimony__info">Viajera Casual.</span>
+                        </h2>
+                        <p class="testimony__review">Lorem, ipsum dolor sit amet 
+                            consectetur adipisicing elit. Animi accusamus corporis 
+                            possimus ipsa sint exercitationem est. Tempore tenetur 
+                            consequatur eum reprehenderit, culpa velit omnis incidunt, 
+                            animi tempora eligendi quod libero?
+                        </p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/person2.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Ema Park,
+                            <span class="testimony__info">Viajera Frecuente.</span>
+                        </h2>
+                        <p class="testimony__review">Lorem, ipsum dolor sit amet 
+                            consectetur adipisicing elit. Animi accusamus corporis 
+                            possimus ipsa sint exercitationem est. Tempore tenetur 
+                            consequatur eum reprehenderit, culpa velit omnis incidunt, 
+                            animi tempora eligendi quod libero?
+                        </p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/person3.jpg" class="testimony__img">
+                    </figure>
+                </section>
+                <img src="./images/icons/rightarrow.svg" class="testimony__arrow" id="next">
+            </div>
+        </section>
+
+        <section class="about">
+            <h2 class="about__subtitle subtitle">Sobre nosotros</h2>
+            <div class="about__container">
+                <figure class="about__picture">
+                    <img src="./images/office.jpg" alt="" class="about__img">
+                </figure>
+                <div class="about__text">
+                    <p>
+                        ViajandoJuntos nació de la necesidad que tienen muchos viajeros para poder 
+                        planificar sus viajes y ser partes de una comunidad. Buscamos brindar a nuestros 
+                        usuarios una comunidad segura y en la cual se sientan comodos participando. 
+                        Además, queremos que se sientan comodos usando nuestras herramientas de planificacion y reserva. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contactus container">
+            <h2 class="contactus__subtitle subtitle">Contáctanos</h2>
+            <div class="contactus__table">
+                <div>
+                    <input type="text" name="contact-name" id="" value="Nombre" class="contactus__textbox">
+                </div>
+                <div>
+                    <input type="text" name="contact-name" id="" value="Correo" class="contactus__textbox">
+                </div>
+                <div>
+                    <button class="contactus__button">Empieza tu Aventura!</button>
+                </div>
+            </div>
+        </section>
+
     </main>
-    
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">ViajandoJuntos.</h2>
+                <ul class="nav__link nav__link--footer"></ul>
+            </nav>
+
+
+        </section>
+    </footer>
+    <script src="./js/slider.js"></script>
 </body>
 </html>

@@ -196,9 +196,9 @@ body{
     max-width: 300;    
 }
 
-/* About */
+/* Benefits */
 
-.about{
+.benefits{
     text-align: center;
     background-color: white;
 }
@@ -209,21 +209,20 @@ body{
     margin-bottom: 25px;
 }
 
-.about__main{
-    padding-top: 1em;
-    display: grid;
+.benefits__main{
+    display: flex;
+    flex-wrap: wrap;
     width: 70%;
     margin: 0 auto;
-    gap: 1em;
+    gap: 2.5em 150px;
     overflow: hidden;
-    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
 }
 
-.about__paragraph{
+.benefits__paragraph{
     line-height: 1.7;
 }
 
-.about__icons{
+.benefits__icons{
     display: grid;
     gap: 1em;
     justify-items: center;
@@ -232,10 +231,10 @@ body{
     margin:0 auto;
 }
 
-.about__icon{
+.benefits__icon{
     width: 60px;
 }
-.about__title{
+.benefits__title{
     background-color: var(--main-color);
     color: var(--secondary-color);
     height: 50px;
@@ -252,7 +251,8 @@ body{
 
 .tools__main{
     padding-top: 1em;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     width: 70%;
     margin: 0 auto;
     gap: 1em;
@@ -290,3 +290,160 @@ body{
     cursor:pointer;
     border-radius: 10px;
 }
+
+
+/* Testimony */
+
+.testimony{
+    background-color: var(--main-color);
+    padding: 3em;
+}
+
+.testimony__subtitle{
+    color: white;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.testimony__container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center; /* centrado verticalmente */
+    justify-items: center;
+}
+
+.testimony__body{
+    background-color: var(--secondary-color);
+    max-width: 1000px;
+    border-radius: 35px;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.testimony__body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.testimony__info{
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    display: inline-block;
+    padding: 5px;
+}
+
+.testimony__img{
+    width: 250px;
+    height: 250px;
+    border-radius: 35px;
+    object-fit: cover;
+    justify-items: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.testimony__texts{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 3em;
+    max-width: 700px;
+}
+
+.testimony__arrow{
+    width: 100%;
+    cursor: pointer;
+}
+
+/* About us */
+
+.about{
+    background-color: white;
+}
+
+.about__subtitle{
+    margin-top: 1em;
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.about__container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center; /* centrado verticalmente */
+    margin: auto;
+    margin-bottom: 3em;
+}
+
+.about__picture{
+    max-width: 500px;
+}
+
+.about__text{
+    margin-left: 1em;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.about__img{
+    width: 100%;
+    display: block;
+    border-radius: 40px;
+}
+
+/* Contact Us */
+
+.contactus{
+    background-color: var(--secondary-color);
+}
+.contactus__subtitle{
+    color: var(--main-color);
+    text-align: center;
+}
+.contactus__table{
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.contactus__textbox{
+    height: 50px;
+    width: 360px;
+    border-radius: 10px;
+    border: gray;
+    border-style: solid;
+}
+
+.contactus__button{
+    background-color: var(--main-color);
+    color: white;
+    height: 90px;
+    width: 360px;
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Footer */
+
+.footer{
+    background-color: var(--main-color);
+}
+
