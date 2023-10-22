@@ -101,21 +101,21 @@
             <h2 class="subtitle">Nuestras herramientas</h2>
             <div class="tools__main">
                 <article class="tools__icons">
-                    <img src="./images/icons/lock.svg" alt="" class="tools__icon">
+                    <img src="./images/icons/planificacion.png" alt="" class="tools__icon">
                     <button class="tools__title">
                         <h3 >Planificación</h3>
                     </button>
                 </article>
 
                 <article class="tools__icons">
-                    <img src="./images/icons/personalization.svg" alt="" class="tools__icon">
+                    <img src="./images/icons/foro.svg" alt="" class="tools__icon">
                     <button class="tools__title">
                         <h3 >Foros</h3>
                     </button>
                 </article>
 
                 <article class="tools__icons">
-                    <img src="./images/icons/community.svg" alt="" class="tools__icon">
+                    <img src="./images/icons/convenio.png" alt="" class="tools__icon">
                     <button class="tools__title">
                        <h3 >Convenios</h3>
                     </button>
@@ -183,9 +183,11 @@
         <section class="about">
             <h2 class="about__subtitle subtitle">Sobre nosotros</h2>
             <div class="about__container">
-                <figure class="about__picture">
-                    <img src="./images/office.jpg" alt="" class="about__img">
-                </figure>
+                <div class="about__picture">
+                    <figure>
+                        <img src="./images/office.jpg" alt="" class="about__img">
+                    </figure>
+                </div>
                 <div class="about__text">
                     <p>
                         ViajandoJuntos nació de la necesidad que tienen muchos viajeros para poder 
@@ -201,10 +203,10 @@
             <h2 class="contactus__subtitle subtitle">Contáctanos</h2>
             <div class="contactus__table">
                 <div>
-                    <input type="text" name="contact-name" id="" value="Nombre" class="contactus__textbox">
+                    <input type="text" name="contact-name" id="" placeholder="Nombre" class="contactus__textbox">
                 </div>
                 <div>
-                    <input type="text" name="contact-name" id="" value="Correo" class="contactus__textbox">
+                    <input type="email" name="contact-name" id="" placeholder="Correo" class="contactus__textbox">
                 </div>
                 <div>
                     <button class="contactus__button">Empieza tu Aventura!</button>
@@ -214,15 +216,52 @@
 
     </main>
     <footer class="footer">
-        <section class="footer__container container">
-            <nav class="nav nav--footer">
-                <h2 class="footer__title">ViajandoJuntos.</h2>
-                <ul class="nav__link nav__link--footer"></ul>
-            </nav>
+        <div class="footer__container">
+            <div class="footer__box">
+                <div class="footer__logo">
+                    <h2>ViajandoJuntos.</h2>
+                </div>
+                <div class="footer__terms">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Illo totam commodi quam architecto nam suscipit deleniti, 
+                        hic facilis et! In dolorum quo ea dolores, reiciendis ipsam 
+                        sit accusantium. Vel, culpa?
+                    </p>
+                </div>
+            </div>
 
+            <div class="footer__box">
+                <h2>Anexos</h2>
+                <a href="#">Descubre</a>
+                <a href="#">Descuentos especiales</a>
+                <a href="#">Comunidad</a>
+                <a href="#">Sobre nosotros</a>
+            </div>
+            
+            <div class="footer__box">
+                <h2>Servicios</h2>
+                <a href="#">Blog & Artículos</a>
+                <a href="#">Términos & Condiciones</a>
+                <a href="#">Política</a>
+                <a href="#">Contáctanos</a>
+            </div>
 
-        </section>
+            <div class="footer__box">
+                <h2>Conctato</h2>
+                <a href="#">Teléfono: 123 456 7890</a>
+                <a href="#">Email: UPC@gmail.com</a>
+                <a href="#">Maps: Lorem Ipsum</a>
+            </div>
+        </div>
+        <div>
+            <a href="https://www.instagram.com/"><img src="./images/icons/instagram.svg" alt="" class="footer__icon"></a>
+            <a href="https://www.facebook.com/"><img src="./images/icons/facebook.svg" alt="" class="footer__icon"></a>
+            <a href="https://twitter.com/"><img src="./images/icons/twitter.svg" alt="" class="footer__icon"></a>
+            <a href="https://github.com/ayrtonto/IHC-CC51_Grupo01"><img src="./images/icons/github.svg" alt="" class="footer__icon"></a>
+        </div>
     </footer>
     <script src="./js/slider.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
